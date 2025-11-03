@@ -24,8 +24,10 @@ No business logic, no README drama—just the skeleton that breathes.
 
 ### **Setup Table**
 
-| Step | Who Does It | Prompt / Action | Result | Copilot Do ✅ | Copilot Don’t 🚫 |
-|------|--------------|-----------------|---------|----------------|------------------|
+### **Setup Table**
+
+| Step | Who | Prompt / Action | Result | Copilot ✅ | Copilot 🚫 |
+|------|-----|-----------------|---------|------------|------------|
 | **1. Create Repo** | You | `gh repo create copilot-springboot-backend-showcase --public --clone`<br>`spring init --dependencies=web,data-jpa,validation,h2,actuator banking-core` | Local project ready | — | Don’t ask Copilot to “create GitHub repo” – it’s allergic to CLI. |
 | **2. Open in IntelliJ** | You | Check that these exist:<br>`pom.xml`<br>`src/main/java/com/example/bankingcore/BankingCoreApplication.java`<br>`src/test/java/` | Project compiles | — | Don’t start typing “generate everything” before structure exists. |
 | **3. Create Folders** | You | `controller/`, `service/`, `repository/`, `model/` | Directory map done | — | Don’t wait for Copilot – it won’t build folders out of thin air. |
