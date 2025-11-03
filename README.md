@@ -42,8 +42,3 @@ It includes features like customer management, fund transfers, transaction logs,
 👉 Read more details here:  
 [**docs/usecase-customer-fund-transfer.md**](docs/usecase-customer-fund-transfer.md)
 
----
-
-## 🧭 Folder Structure
-
-
