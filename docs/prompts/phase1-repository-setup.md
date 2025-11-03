@@ -24,25 +24,16 @@ No business logic, no README drama—just the skeleton that breathes.
 
 ### **Setup Table**
 
-### **Setup Table**
-
 | Step | Who | Prompt / Action | Result | Copilot ✅ | Copilot 🚫 |
 |------|-----|-----------------|---------|------------|------------|
-| **1. Create Repo** | You | ```bash
-gh repo create copilot-springboot-backend-showcase --public --clone
-spring init --dependencies=web,data-jpa,validation,h2,actuator banking-core
-``` | Local project ready | — | Don’t ask Copilot to “create GitHub repo.” It can’t run terminal commands. |
-| **2. Open in IntelliJ** | You | Verify these exist:<br>`pom.xml`<br>`src/main/java/com/example/bankingcore/BankingCoreApplication.java`<br>`src/test/java/` | Project compiles | — | Don’t start typing “generate everything” before structure exists. |
-| **3. Create Folders** | You | Add:<br>`controller/`<br>`service/`<br>`repository/`<br>`model/` | Directory map done | — | Copilot won’t create folders automatically. |
-| **4. First Class Trigger** | You | Inside `model/` add comment:<br>`// create empty placeholder class so Copilot starts noticing folders` | Copilot now “sees” structure | Do this – first class helps Copilot detect structure. | Don’t leave folders empty. |
+| **1. Create Repo** | You | <pre><code>gh repo create copilot-springboot-backend-showcase --public --clone<br>spring init --dependencies=web,data-jpa,validation,h2,actuator banking-core</code></pre> | Local project ready | — | Don’t ask Copilot to “create GitHub repo” – it’s allergic to CLI. |
+| **2. Open in IntelliJ** | You | Check that these exist:<br>`pom.xml`<br>`src/main/java/com/example/bankingcore/BankingCoreApplication.java`<br>`src/test/java/` | Project compiles | — | Don’t start typing “generate everything” before structure exists. |
+| **3. Create Folders** | You | `controller/`, `service/`, `repository/`, `model/` | Directory map done | — | Don’t wait for Copilot – it won’t build folders out of thin air. |
+| **4. First Class Trigger** | You | Inside `model/` type comment:<br>`// create empty placeholder class so Copilot starts noticing folders` | Copilot now “sees” structure | Do this – first class wakes it up. | Don’t leave dirs empty – Copilot gets amnesia. |
 | **5. Main Application** | Copilot | In `BankingCoreApplication.java` type:<br>`// create main Spring Boot app class with @SpringBootApplication` | Copilot writes main class | Accept its code, rename package if off. | Don’t ask for “complex starter” – it’ll add GraphQL and MQTT. |
 | **6. Dependencies** | Copilot | In `pom.xml` type:<br>`<!-- add dependencies for spring-boot-starter-web, data-jpa, validation, h2 -->` | Proper dependency list | Let Copilot fill XML. | Don’t say “add everything I may need” – you’ll get Kafka & aliens. |
-| **7. Run and Check** | You | Run from IntelliJ toolbar | Should print:<br>**Started BankingCoreApplication…** | Verify startup success. | Skip debugging until the next phase. |
-| **8. Commit Once** | You | ```bash
-git add .
-git commit -m "Phase 1 – skeleton project"
-``` | Safe checkpoint | Good habit. | Don’t bundle Copilot’s experiments into one large commit. |
-
+| **7. Run and Check** | You | Run from IntelliJ toolbar | Should print:<br>`Started BankingCoreApplication…` | Celebrate quietly. | Don’t debug yet — Phase 2 will break it anyway. |
+| **8. Commit Once** | You | <pre><code>git add .<br>git commit -m "Phase 1 – skeleton project"</code></pre> | Safe checkpoint | Good habit. | Don’t bundle Copilot’s experiments into one giant commit. |
 
 ---
 
