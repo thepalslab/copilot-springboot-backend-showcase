@@ -48,5 +48,8 @@ No business logic, no README drama—just the skeleton that breathes.
 
 ### **Video Placeholder**
 
-`[VIDEO_PLACEHOLDER: phase1-setup-demo.mp4]`
+<video width="640" controls>
+  <source src="assets/phase1-repository-setup.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 *Show: typing the comment → Copilot generating main class → project running.*
