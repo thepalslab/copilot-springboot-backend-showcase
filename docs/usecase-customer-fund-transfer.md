@@ -54,8 +54,9 @@ This use case is intentionally simple enough for learning, but complex enough to
 
 Each of these steps becomes an **opportunity to experiment with Copilot** — prompt by intent, then observe and refine.
 
-## 📦 Architectural Overview
+## 🏗️ Architectural Overview
 
+```text
 src/main/java/com/example/bank/
 ├── controller/
 │   ├── CustomerController.java
@@ -75,12 +76,6 @@ src/main/java/com/example/bank/
 │   └── AuditLog.java
 └── config/
 └── ApplicationConfig.java
+```
 
 You won’t manually write this structure — you’ll **guide Copilot** to generate it, file by file.
-
-## 💬 How to Use This Use Case
-
-- Use the features above as **mini-missions**.  
-- For each, type a **prompt comment** and observe Copilot’s code suggestion.  
-- Compare with expected behavior.  
-- Document your findings in `prompt-library.md`.
