@@ -33,6 +33,32 @@ Each topic builds on the last — from **prompting for code** → **verifying ou
 
 ---
 
+## Prompt Files
+- <span style="font-size:22px;">[phase1-repository-setup.md](docs/prompts/phase1-repository-setup.md)</span> </br>
+  <img src="assets/phase1-setup-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase2-domain-and-data-layer.md](docs/prompts/phase2-domain-and-data-layer.md)</span> </br>
+  <img src="assets/phase2-domain-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase3-service-layer.md](docs/prompts/phase3-service-layer.md)</span> </br>
+  <img src="assets/phase3-service-layer-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase4-api-layer.md](docs/prompts/phase4-api-layer.md)</span> </br>
+  <img src="assets/phase4-api-layer-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase5-infrastructure-and-crosscutting.md](docs/prompts/phase5-infrastructure-and-crosscutting.md)</span> </br>
+  <img src="assets/phase5-infrastructure-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase6-async-and-scheduling.md](docs/prompts/phase6-async-and-scheduling.md)</span> </br>
+---
+- <span style="font-size:22px;">[phase7-testing-and-quality-assurance.md](docs/prompts/phase7-testing-and-quality-assurance.md)</span> </br>
+  <img src="assets/phase7-testing-demo.gif" alt="Watch Demo Video" width="1100"/>
+---
+- <span style="font-size:22px;">[phase8-code-comprehension-and-improvement.md](docs/prompts/phase8-code-comprehension-and-improvement.md)</span> </br>
+---
+- <span style="font-size:22px;">[phase9-prompt-engineering-and-reflection.md](docs/prompts/phase9-prompt-engineering-and-reflection.md)</span> </br>
+
+
 ## 📘 Real-World Use Case
 
 The example backend used across this repo is a **Retail Banking Mini-Core: Customer Fund Transfer System**.
