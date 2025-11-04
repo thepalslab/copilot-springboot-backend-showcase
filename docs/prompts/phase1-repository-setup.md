@@ -48,6 +48,6 @@ No business logic, no README drama—just the skeleton that breathes.
 
 ### **Video Placeholder**
 
-[🎬 Watch Demo Video (GitHub View)](../../assets/phase1-setup-demo.gif)
+![Watch Demo Video](../../assets/phase1-setup-demo.gif)
 
 *Show: typing the comment → Copilot generating main class → project running.*
