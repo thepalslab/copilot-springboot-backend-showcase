@@ -57,7 +57,7 @@ This is where Copilot starts showing off — but you’ll keep it polite, valida
 ---
 
 ### **Video Placeholder**
-`[VIDEO_PLACEHOLDER: phase4-api-layer-demo.mp4]`  
+![Watch Demo Video](../../assets/phase4-api-layer-demo.gif)
 _Show: typing controller prompt → Copilot generating endpoints → testing transfer API in Postman._
 
 ---

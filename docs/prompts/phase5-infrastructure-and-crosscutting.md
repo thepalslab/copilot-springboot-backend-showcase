@@ -57,7 +57,7 @@ Copilot can scaffold these quickly, but *you* must ensure the tone, format, and 
 ---
 
 ### **Video Placeholder**
-`[VIDEO_PLACEHOLDER: phase5-infrastructure-demo.mp4]`  
+![Watch Demo Video](../../assets/phase5-infrastructure-demo.gif)
 _Show: Copilot generating GlobalExceptionHandler, reading config from YAML, and printing clean logs._
 
 ---

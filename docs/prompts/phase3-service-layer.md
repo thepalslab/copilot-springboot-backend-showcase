@@ -57,7 +57,7 @@ This is where Copilot stops writing simple CRUD and starts guessing logic — so
 ---
 
 ### **Video Placeholder**
-`[VIDEO_PLACEHOLDER: phase3-service-layer-demo.mp4]`  
+![Watch Demo Video](../../assets/phase3-service-layer-demo.gif)
 _Show: Copilot generating transfer logic, adding @Transactional, creating transaction logs._
 
 ---

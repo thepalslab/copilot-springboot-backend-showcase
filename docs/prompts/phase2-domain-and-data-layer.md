@@ -24,7 +24,7 @@ In this phase you teach Copilot the “nouns” of your project — Customers, A
 | Step | Who Does It | Prompt / Action | Result | Copilot Do ✅ | Copilot Don’t 🚫 |
 |------|--------------|-----------------|---------|----------------|------------------|
 | **1. Create packages** | You | Make sure `model/` and `repository/` exist.<br>Copilot won’t create folders on its own. | Folder ready | — | Don’t let Copilot guess file paths; create them first. |
-| **2. Customer Entity** | You start typing:<br>`// create JPA entity Customer with id, name, email, mobile` | Copilot writes full entity with annotations. | Works as expected | Accept it, check `@Entity`, `@Id`. | Don’t accept if it adds weird fields like “address” you didn’t ask for. |
+| **2. Customer Entity** | You start typing:<br>`// create JPA entity Customer with id, name, email, mobile`| Copilot writes full entity with annotations. | Works as expected | Accept it, check `@Entity`, `@Id`. | Don’t accept if it adds weird fields like “address” you didn’t ask for. |
 | **3. Account Entity** | You | `// JPA entity Account with accountNumber, balance (BigDecimal), and link to Customer` | Copilot adds `@ManyToOne` relation. | Keep `BigDecimal` for money. | Don’t let it use `double` – precision loss is real. |
 | **4. Transaction Entity** | You | `// entity Transaction with sourceAccount, targetAccount, amount, type, status, timestamp` | Copilot builds relationships and enums. | Check foreign keys and `@Enumerated(EnumType.STRING)`. | Don’t accept `EnumType.ORDINAL` – DB mismatch risk. |
 | **5. Enum Creation** | Copilot | Type:<br>`// enum TransactionType with DEBIT, CREDIT, TRANSFER` | Enum ready for use. | Keep names simple. | Don’t rename enums later – DB queries will cry. |
@@ -40,13 +40,13 @@ In this phase you teach Copilot the “nouns” of your project — Customers, A
 |-----------|---------------|
 | **“Copilot learns your nouns before it speaks verbs.”** | Create entities first. Once Copilot knows what a Customer and Account are, it can write business logic later. |
 | **“Money deserves BigDecimal, not floating-point drama.”** | Always use `BigDecimal` for currency. Copilot loves `double`, but you won’t love the rounding errors. |
-| **“Relationships are like marriages — review what Copilot auto-wires.”** | Check every `@ManyToOne` or `@OneToMany` it adds. Wrong direction = endless NullPointerException therapy. |
+| **“Entity relationships deserve a sanity check — always review what Copilot auto-wires.”** | Check every `@ManyToOne` or `@OneToMany` it adds. Wrong direction = endless NullPointerException debugging. |
 | **“Enums: the smallest file that breaks the biggest query.”** | Once enum names go to DB, changing them later breaks old data. Treat them as schema, not casual code. |
 
 ---
 
 ### **Video Placeholder**
-`[VIDEO_PLACEHOLDER: phase2-domain-demo.mp4]`  
+![Watch Demo Video](../../assets/phase2-domain-demo.gif)
 _Show: typing prompt → Copilot generating entities → verifying schema in H2 console._
 
 ---
